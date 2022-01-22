@@ -25,4 +25,4 @@ app.use(express.json());
 app.use('/api/user',authRoute);
 app.use('/api/posts',postRoute);
 
-app.listen(3000 , () => console.log('Server Up & Running'));
+app.listen(process.env.PORT || 8080 , () => console.log('Server Up & Running'));
